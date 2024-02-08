@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 40px;
+}
+
+#nav>h1{
+    font-size: 30px;
+   font-weight: 400;
+}
+
+#part2 a{
+    text-decoration: none;
+    margin: 20px 20px;
+    color: black;
+}
+
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav #part2 a:nth-last-child(1){
+    /* background-color: green; */
+    padding: 5px 15px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+}
+#nav #part2 a:nth-last-child(1) #green{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -100%;
+    background-color: greenyellow;
+    transition: left 0.6s ease;
+    
+}
+#nav #part2 a:nth-last-child(1) h5{
+    font-weight: 100;
+    position: relative;
+    z-index: 99;
+}
+
+#nav #part2 a:nth-last-child(1):hover #green{
+    left: 0;
+}
+
+#main>h1{
+    font-size: 60px;
+    font-weight: 400;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    z-index:99;
+   
+}
+#main>h1::after{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 16px;
+    background-image: url(	https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover; 
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%,0);
+
+ 
+}
+#main #img1{
+    height: 350px;
+    width: 250px;
+    position: absolute;
+    left: 3%;
+    top: 20%;
+
+}
+#main #img2{
+    height: 180px;
+    width:200px;
+    position: absolute;
+    right: 27%;
+    top: 18%;
+
+}
+
+#main #img3{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 9%;
+    top: 55%;
+
+}
+#main p{
+    position: absolute;
+    top: 70%;
+    color: #444;
+    font-size: 22px;
+    font-weight: 400;
+}
+#main #icons{
+    position: absolute;
+    top: 70%;
+    left: 57%;
+    border: 1px solid black;
+    padding: 2px 20px;
+    border-radius: 20px;
+}
+#main img{
+    transition: margin 0.8s ease;
+}
+
+#main img:hover{
+    margin-top:-20px ;
+}
